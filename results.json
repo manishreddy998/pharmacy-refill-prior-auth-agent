@@ -1,0 +1,18 @@
+{
+ "stub_planner": {
+  "cases": 300,
+  "correct": 300,
+  "accuracy": 1.0,
+  "unsafe_auto_actions": 0,
+  "escalated": 79,
+  "avg_tool_calls": 1.58
+ },
+ "planner_with_20pct_bad_choices": {
+  "cases": 300,
+  "correct": 271,
+  "accuracy": 0.9033,
+  "unsafe_auto_actions": 0,
+  "escalated": 108,
+  "avg_tool_calls": 1.73
+ }
+}

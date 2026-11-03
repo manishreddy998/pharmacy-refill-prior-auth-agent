@@ -1,7 +1,11 @@
-"""Fake but realistic pharmacy back end: patients, prescriptions, payer formulary rules."""
-import random
-DRUGS={"atorvastatin":dict(controlled=False,pa=False),"metformin":dict(controlled=False,pa=False),"semaglutide":dict(controlled=False,pa=True),
- "adalimumab":dict(controlled=False,pa=True),"oxycodone":dict(controlled=True,pa=False),"lisinopril":dict(controlled=False,pa=False),"apixaban":dict(controlled=False,pa=True)}
+"""Pharmacy back end. Drug facts are REAL: controlled status and DEA schedule for 30 common
+generics come from the openFDA NDC directory (data/drugs_openfda.json, public domain, fetched by
+scripts/fetch_drugs.py). Patients and cases stay SYNTHETIC (seed=7): real prescription records are
+protected health data. Prior auth flags are an ASSUMED payer policy, labelled as such in the JSON."""
+import json, random
+from pathlib import Path
+_J = json.loads((Path(__file__).resolve().parent.parent / "data" / "drugs_openfda.json").read_text())
+DRUGS = {k: dict(controlled=v["controlled"], pa=v["pa"], dea_schedule=v["dea_schedule"]) for k, v in _J["drugs"].items()}
 def make_world(n=300,seed=7):
     r=random.Random(seed); cases=[]
     for i in range(n):

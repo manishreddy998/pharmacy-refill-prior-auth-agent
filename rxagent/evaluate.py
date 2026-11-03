@@ -11,4 +11,12 @@ def noisy_planner(p=0.2,seed=3):
     r=random.Random(seed)
     def f(c,s): return r.choice(["lookup_drug","check_refills","check_formulary","check_chart","delete_record"]) if r.random()<p else planner_stub(c,s)
     return f
-if __name__=="__main__": print(json.dumps({"stub_planner":score(),"planner_with_20pct_bad_choices":score(noisy_planner())},indent=1))
+def main(with_llm=True, n_llm=100):
+    out={"stub_planner":score(),"planner_with_20pct_bad_choices":score(noisy_planner())}
+    if with_llm:
+        from .llm_planner import make_llm_planner
+        out[f"qwen2.5-3b_planner_first_{n_llm}_cases"]=score(make_llm_planner(),n_llm)
+        out[f"stub_planner_first_{n_llm}_cases"]=score(planner_stub,n_llm)
+    return out
+if __name__=="__main__":
+    import sys; r=main("--no-llm" not in sys.argv); open("results.json","w").write(json.dumps(r,indent=1)); print(json.dumps(r,indent=1))

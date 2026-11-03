@@ -1,0 +1,238 @@
+{
+ "source": "openFDA NDC directory",
+ "fetched": "2026-11-03",
+ "drugs": {
+  "atorvastatin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "metformin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "semaglutide": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "adalimumab": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "oxycodone": {
+   "controlled": true,
+   "dea_schedule": [
+    "CII"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "lisinopril": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "apixaban": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 69,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "amlodipine": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "levothyroxine": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "sertraline": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "alprazolam": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "lorazepam": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "zolpidem": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "tramadol": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "hydrocodone": {
+   "controlled": true,
+   "dea_schedule": [
+    "CII"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "methylphenidate": {
+   "controlled": true,
+   "dea_schedule": [
+    "CII"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "amphetamine": {
+   "controlled": true,
+   "dea_schedule": [
+    "CII"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "gabapentin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "pregabalin": {
+   "controlled": true,
+   "dea_schedule": [
+    "CV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "rivaroxaban": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 89,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "dulaglutide": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 19,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "etanercept": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 6,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "insulin glargine": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 35,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "empagliflozin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 69,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "sitagliptin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "ustekinumab": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 61,
+   "pa": true,
+   "pa_source": "ASSUMED"
+  },
+  "omeprazole": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "rosuvastatin": {
+   "controlled": false,
+   "dea_schedule": [],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "clonazepam": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIV"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  },
+  "buprenorphine": {
+   "controlled": true,
+   "dea_schedule": [
+    "CIII"
+   ],
+   "ndc_products_seen": 100,
+   "pa": false,
+   "pa_source": "ASSUMED"
+  }
+ }
+}

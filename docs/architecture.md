@@ -3,8 +3,9 @@
 ```mermaid
 flowchart LR
   Q[Case queue<br/>300 synthetic seeded cases] --> G{Hard guardrails<br/>identity, allergy, controlled}
+  FDA[openFDA NDC API<br/>30 real drugs, DEA schedule] --> G
   G -->|flag| E[Escalate to pharmacist]
-  G -->|clear| P[Planner<br/>stub or LLM]
+  G -->|clear| P[Planner<br/>stub or Qwen2.5 3B]
   P --> PC{Tool preconditions}
   PC -->|not met| R[Reject step, log it] --> B{Step budget left?}
   PC -->|met| T[Tools<br/>lookup_drug, check_refills,<br/>check_formulary, check_chart]
@@ -62,3 +63,10 @@ The guardrails are plain code, not model output, so a bad planner cannot skip th
 ## Audit log
 
 Every step is added to a trace for the case: `guard` (with the reason), `tool` (with the tool name) and `reject` (with the tool name and why). The dashboard's Audit trail view shows this trace for any case, so a reviewer can see exactly why the agent did what it did.
+
+## Data sources (updated 2026-11-03)
+
+- Drug facts: openFDA NDC directory (US public domain), 30 generics, controlled status and DEA schedule, in `data/drugs_openfda.json`.
+- Patient cases: synthetic, seed=7 (real prescriptions are protected health data).
+- Prior auth flags: assumed payer policy, marked `ASSUMED`.
+- Planner: deterministic stub, or Qwen2.5 3B via local Ollama with a replay cache in `data/llm_cache.json`.

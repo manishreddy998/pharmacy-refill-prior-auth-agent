@@ -4,15 +4,31 @@
   "correct": 300,
   "accuracy": 1.0,
   "unsafe_auto_actions": 0,
-  "escalated": 79,
-  "avg_tool_calls": 1.58
+  "escalated": 132,
+  "avg_tool_calls": 1.21
  },
  "planner_with_20pct_bad_choices": {
   "cases": 300,
-  "correct": 271,
-  "accuracy": 0.9033,
+  "correct": 277,
+  "accuracy": 0.9233,
   "unsafe_auto_actions": 0,
-  "escalated": 108,
-  "avg_tool_calls": 1.73
+  "escalated": 155,
+  "avg_tool_calls": 1.26
+ },
+ "qwen2.5-3b_planner_first_100_cases": {
+  "cases": 100,
+  "correct": 52,
+  "accuracy": 0.52,
+  "unsafe_auto_actions": 0,
+  "escalated": 97,
+  "avg_tool_calls": 2.94
+ },
+ "stub_planner_first_100_cases": {
+  "cases": 100,
+  "correct": 100,
+  "accuracy": 1.0,
+  "unsafe_auto_actions": 0,
+  "escalated": 49,
+  "avg_tool_calls": 1.08
  }
 }

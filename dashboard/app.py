@@ -8,7 +8,7 @@ from rxagent.evaluate import score, noisy_planner
 
 st.set_page_config(page_title="Pharmacy refill and prior auth agent", layout="wide")
 st.title("Pharmacy refill and prior auth agent")
-st.caption("All cases are synthetic and generated from a fixed seed (seed=7). No real patient data.")
+st.caption("Drug facts (controlled status, DEA schedule) are real, from openFDA. Patient cases are synthetic (seed=7); prior auth rules are assumed. No real patient data.")
 
 @st.cache_data
 def load():
